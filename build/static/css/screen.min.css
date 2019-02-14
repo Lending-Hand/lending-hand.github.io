@@ -262,7 +262,7 @@ a:hover{
     margin-left:-100px;
     margin-top:-60px;
     text-align:center;
-    color:#446cb3;
+    color:#328de3;
     font-size:120px;
     line-height:120px;
     font-family:"Open Sans",Tahoma,Verdana,Arial,sans-serif
@@ -404,7 +404,7 @@ a:hover{
     bottom:-29px;
     left:0;
     z-index:250;
-    border-top:30px solid #446cb3;
+    border-top:30px solid #328de3;
     border-left:40px solid transparent;
     border-right:40px solid transparent
 }
@@ -619,12 +619,12 @@ a:hover{
     transition:color .5s
 }
 .services__item:hover:before{
-    color:#446cb3
+    color:#328de3
 }
 .advantages{
     text-align:center;
-    border-left:10px solid #446cb3;
-    border-right:10px solid #446cb3;
+    border-left:10px solid #328de3;
+    border-right:10px solid #328de3;
     float:left;
     width:98%;
     width:-webkit-calc(100% - 40px);
@@ -661,7 +661,7 @@ a:hover{
 }
 .advantages blockquote{
     padding:40px 0;
-    border-bottom:10px solid #446cb3
+    border-bottom:10px solid #328de3
 }
 .advantages blockquote p,.advantages blockquote cite{
     display:inline-block;
@@ -736,10 +736,10 @@ a:hover{
     z-index:10
 }
 .process__step:hover>.process__step-icon,.process__step:hover>.process__step-icon.is-active{
-    border-color:#446cb3
+    border-color:#328de3
 }
 .process__step:hover>.process__step-icon:before,.process__step:hover>.process__step-icon.is-active:before{
-    text-shadow:-1px -1px 0 #446cb3,0 -1px 0 #446cb3,1px -1px 0 #446cb3,1px 0 0 #446cb3,1px 1px 0 #446cb3,0 1px 0 #446cb3,-1px 1px 0 #446cb3,-1px 0 0 #446cb3
+    text-shadow:-1px -1px 0 #328de3,0 -1px 0 #328de3,1px -1px 0 #328de3,1px 0 0 #328de3,1px 1px 0 #328de3,0 1px 0 #328de3,-1px 1px 0 #328de3,-1px 0 0 #328de3
 }
 .process__step:hover+.process__step-info{
     visibility:visible
@@ -788,10 +788,10 @@ a:hover{
     transition:all .5s
 }
 .process__step-icon.is-active{
-    border-color:#446cb3
+    border-color:#328de3
 }
 .process__step-icon.is-active:before{
-    text-shadow:-1px -1px 0 #446cb3,0 -1px 0 #446cb3,1px -1px 0 #446cb3,1px 0 0 #446cb3,1px 1px 0 #446cb3,0 1px 0 #446cb3,-1px 1px 0 #446cb3,-1px 0 0 #446cb3
+    text-shadow:-1px -1px 0 #328de3,0 -1px 0 #328de3,1px -1px 0 #328de3,1px 0 0 #328de3,1px 1px 0 #328de3,0 1px 0 #328de3,-1px 1px 0 #328de3,-1px 0 0 #328de3
 }
 .process__step-info{
     position:absolute;
@@ -803,7 +803,7 @@ a:hover{
     margin:40px 0 50px;
     padding:10px;
     background-color:#fff;
-    border-top:10px solid #446cb3;
+    border-top:10px solid #328de3;
     -webkit-box-shadow:2px 2px 4px -2px #111;
     box-shadow:2px 2px 4px -2px #111
 }
@@ -819,7 +819,7 @@ a:hover{
     top:-40px;
     left:12.5%;
     margin-left:-40px;
-    border-bottom:40px solid #446cb3;
+    border-bottom:40px solid #328de3;
     border-left:40px solid transparent;
     border-right:40px solid transparent
 }
@@ -923,7 +923,7 @@ a:hover{
     display:inline-block;
     width:90%;
     font-size:25px;
-    color:#446cb3;
+    color:#328de3;
     vertical-align:middle;
     white-space:normal;
     border-bottom:none
@@ -983,7 +983,7 @@ a:hover{
     top:-5px;
     left:-25px;
     font-size:20px;
-    color:#446cb3
+    color:#328de3
 }
 .testimonials__item blockquote cite{
     display:block;
@@ -992,7 +992,7 @@ a:hover{
     text-transform:uppercase
 }
 .testimonials__item blockquote cite span.name{
-    color:#446cb3
+    color:#328de3
 }
 .testimonials__item blockquote cite span.role{
     color:#aaa;
@@ -1074,7 +1074,7 @@ a:hover{
 }
 .contact-info__logo{
     display:inline-block;
-    color:#446cb3;
+    color:#328de3;
     font-size:80px;
     line-height:60px;
     letter-spacing:-5px;
@@ -1208,7 +1208,7 @@ a:hover{
     top:-30px;
     left:50%;
     margin-left:-40px;
-    border-bottom:40px solid #446cb3;
+    border-bottom:40px solid #328de3;
     border-left:40px solid transparent;
     border-right:40px solid transparent
 }
