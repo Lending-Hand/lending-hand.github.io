@@ -1,72 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <base href="https://lending-hand.github.io/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home | Lending Hand</title>
+    <meta name="description" content="Page-specific description">
+    <meta name="keywords" content="Page-specific keywords">
+    <link rel="shortcut icon" href="build/favicon.ico">
+    <link rel="shortcut icon" href="build/static/images/favicons/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="build/static/images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="build/static/images/favicons/apple-touch-icon-precomposed.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="build/static/css/screen.min.css">
+    <link rel="stylesheet" href="build/static/css/custom.min.css">
+    <script src="build/static/js/head.min.js"></script>
+    <style>
+    	input {
+        	background-color: #328de3;
+            padding: 2.5% 5%;
+            width: 100%;
+            margin: 2.5% 0% 5% 0%;
+            color: #ffffff;
+        }
+        input.btn {
+            font-size: 1.5em
+        }
+    </style>
+</head>
+
 <body>
-
-<!-- Hey Hydronesium, could you make the E-Mail value and Confirm E-Mail value for both Postal Information and Billing Information have to match -LH --> 
-
-<h2>HTML Forms</h2>
-<form action="/customer_order.js"> 
-  <h3>Postal Information</h3>
-  First name:<br>
-  <input type="text" name="p.fname"required>
-  <br>
-  Last name:<br>
-  <input type="text" name="p.lname"required>
-  <br>
-  Address:<br>
-  <input type="text" name="p.address" required>
-  <br>
-  City:<br>
-  <input type="text" name="p.city" required>
-  <br>
-  Province/State/Region:<br>
-  <input type="text" name="p.province" required>
-  <br>
-  Country:<br>
-  <input type="text" name="p.country" required>
-  <br>
-  E-Mail:<br>
-  <input type="text" name="p.email" required>
-  <br>
-  Confirm E-mail:<br>
-  <input type="text" name="p.confirm.email" equals="p.email" required>
-  <br>  
-  Phone Number:<br>
-  <input type="text" name="p.phone.number">
-  <br>
-  <h3>Billing Information</h3> 
-  First Name:<br>
-  <input type="text" name="b.fname" required>
-  <br>  
-  Last Name:<br>
-  <input type="text" name="b.lname" required>
-  <br>
-  Address:<br>
-  <input type="text" name="b.address" required>
-  <br>  
-  City:<br>
-  <input type="text" name="b.city" required>
-  <br>  
-  Province/State/Region:<br>
-  <input type="text" name="b.province" required>
-  <br>  
-  Country:<br>
-  <input type="text" name="b.country" required>
-  <br>  
-  E-Mail:<br>
-  <input type="text" name="b.email" required>
-  <br>  
-  Confirm E-Mail:<br>
-  <input type="text" name="b.confirm.email" required>
-  <br>  
-  Phone Number:<br>
-  <input type="text" name="b.phone.number">
-  <br><br>
-  <input type="submit" value="Checkout"> 
-</form> 
-
-
-<!--If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".-->
-
+    <!-- Header-->
+    <header class="main-header">
+        <div class="first-nav">
+            <div class="container">
+                <nav class="first-nav__links">
+					&nbsp;
+				</nav>
+                <a class="first-nav__navcontrol icon icon_menu js-navcontrol" href="#">Menu</a>
+            </div>
+        </div>
+        <div class="second-nav js-nav">
+            <div class="container"><a class="second-nav__logo"><span>LH</span></a>
+                <nav class="menu">
+                    <ul>
+                    	<li><a class="js-link js-anchor" href="/search/">Search</a></li>
+                        <li><a class="js-link js-anchor is-selected" href="#home">Home</a></li>
+                        <li><a class="js-link js-anchor" href="#contact">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Home section-->
+    <section class="home-section" id="home">
+        <div class="home-section__bg"></div>
+        <div class="home-section__overlay">
+            <div class="container">
+                <header class="home-section__header about-section__card">
+                    <header class="about-section__card-header">
+                        <h2>Postal Information</h2>
+                    </header>
+                    <div class="about-section__card-info">
+                        <form action="/customer_order.js"> 
+                        	* First name:<br>
+                            <input type="text" name="p.fname" required>
+                            <br>
+                            * Last name:<br>
+                            <input type="text" name="p.lname" required>
+                            <br>
+                            * Address:<br>
+                            <input type="text" name="p.address" required>
+                            <br>
+                            * City:<br>
+                            <input type="text" name="p.city" required>
+                            <br>
+                            * Province/State/Region:<br>
+                            <input type="text" name="p.province" required>
+                            <br>
+                            * Country:<br>
+                            <input type="text" name="p.country" required>
+                            <br>
+                            * E-Mail:<br>
+                            <input type="text" name="p.email" required>
+                            <br>
+                            * Confirm E-mail:<br>
+                            <input type="text" name="p.confirm.email" equals="p.email" required>
+                            <br>
+                            Phone Number:<br>
+                            <input type="text" name="p.phone.number">
+                    	</form>
+                    </div>
+                    <br>
+                    <header class="about-section__card-header">
+                        <h2>Billing Information</h2>
+                    </header>
+                        <div class="about-section__card-info">
+                        <form action="/customer_order.js"> 
+                            * First Name:<br>
+                            <input type="text" name="b.fname" required>
+                            <br>
+                            * Last Name:<br>
+                            <input type="text" name="b.lname" required>
+                            <br>
+                            * Address:<br>
+                            <input type="text" name="b.address" required>
+                            <br>
+                            * City:<br>
+                            <input type="text" name="b.city" required>
+                            <br>
+                            * Province/State/Region:<br>
+                            <input type="text" name="b.province" required>
+                            <br>
+                            * Country:<br>
+                            <input type="text" name="b.country" required>
+                            <br>
+                            * E-Mail:<br>
+                            <input type="text" name="b.email" required>
+                            <br>
+                            * Confirm E-Mail:<br>
+                            <input type="text" name="b.confirm.email" required>
+                            <br>
+                            Phone Number:<br>
+                            <input type="text" name="b.phone.number">
+                            <br><br>
+                    	</form>
+                        
+                    </div>
+                    <br>
+                    	<input type="submit" class="btn" value="Checkout">
+                </header>
+            </div>
+        </div>
+    </section>
+    <!-- Process section-->
+    <section class="common-section" id="process">
+        <div class="container">
+            <header class="common-section__header">
+                <h2>How It Works</h2>
+                <h4>A short tutorial on how to use our services</h4>
+            </header>
+            <div class="grid-container">
+                <ul class="process">
+                    <li class="process__step process__step_research">
+                        <div class="process__step-icon icon icon_research is-active"></div>
+                    </li>
+                    <li class="process__step-info process__step-info_research is-active">
+                        <h3><span>Step 1</span> &mdash; Search</h3>
+                        <p>Search for the item of cloting that you want.</p>
+                    </li>
+                    <li class="process__step process__step_develop">
+                        <div class="process__step-icon icon icon_develop"></div>
+                    </li>
+                    <li class="process__step-info process__step-info_develop">
+                        <h3><span>Step 2</span> &mdash; Personalise</h3>
+                        <p>Select the details that please you - size, colour, etc.</p>
+                    </li>
+                    <li class="process__step process__step_deploy">
+                        <div class="process__step-icon icon icon_deploy"></div>
+                    </li>
+                    <li class="process__step-info process__step-info_deploy">
+                        <h3><span>Step 3</span> &mdash; Shipping details</h3>
+                        <p>Select which delivery service you would prefer - next day, 2 - 3 working days, etc.</p>
+                    </li>
+                    <li class="process__step process__step_deliver">
+                        <div class="process__step-icon icon icon_deliver"></div>
+                    </li>
+                    <li class="process__step-info process__step-info_deliver">
+                        <h3><span>Step 4</span> &mdash; </h3>
+                        <p>Donec non ligula imperdiet, tincidunt quam ut, pellentesque nisi. Quisque est ante, faucibus a urna nec, vehicula pellentesque lectus.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section-->
+    <div class="contacts-section" id="contact">
+        <div class="container">
+            <section class="contact-card">
+                <header class="contact-card__header">
+                    <h2>Contact Information</h2>
+                    <h4>If you need further information about us or our services, please feel free to contact us</h4>
+                </header>
+                <div class="contact-info">
+                    <div class="contact-info__logo">LH</div>
+                    <div class="contact-info__group">
+                        <div class="contact-info__additional">
+                            <p>Need more information?</p>
+                            <p>Want exclusive offers?</p>
+                            <p>Ideas to improve our services?</p>
+                        </div>
+                        <div class="contact-info__vcard vcard">
+                            <h4 class="fn org">Lending Hand</h4>
+                            <p class="role title">Talk to us here</p>
+                            <p class="icon icon_location"><a class="adr js-anchor" href="#gmap"><span class="country-name">England</span>,&nbsp;<span class="locality">Southampton</span></a></p>
+                            <p class="icon icon_mail"><a class="email" href="mailto:lending-hand@hotmail.com">lending-hand@hotmail.com</a></p>
+                            <p class="icon icon_phone"><a class="email" href="tel:1111111111">111-111-11-11</a></p>
+                        </div>
+                        <ul class="contact-info__social">
+                            <li><a class="icon icon_fb" rel="nofollow">I'm on Facebook</a></li>
+                            <li><a class="icon icon_twi" rel="nofollow">My Twitter</a></li>
+                            <li><a class="icon icon_gplus" rel="nofollow">I'm on Google+</a></li>
+                            <li><a class="icon icon_vk" rel="nofollow">I'm in Vk</a></li>
+                            <li><a class="icon icon_in" rel="nofollow">My Linkedin profile</a></li>
+                            <li><a class="icon icon_rss" rel="nofollow">RSS feed... maybe</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="gmap" id="gmap"></div>
+    </div>
+    <!-- Footer-->
+    <footer class="main-footer">
+        <div class="container">
+            <p class="main-footer__copyright">&copy;&nbsp;<span>Lending Hand</span></p><a class="main-footer__gotop icon icon_gotop js-anchor" href="#home">To top!</a>
+            <p class="main-footer__links">Designed by&nbsp;<a href="http://lending-hand.github.io">The Lending Hand Team</a></p>
+        </div>
+    </footer>
+    <script src="build/static/js/body.min.js"></script>
 </body>
+    
 </html>
