@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Hey Hydronesium, could you make the E-Mail value and Confirm E-Mail value for both Postal Information and Billing Information have to match -LH --> 
+
+<h2>HTML Forms</h2>
+<form action="/customer_order.js"> 
+  <h3>Postal Information</h3>
+  First name:<br>
+  <input type="text" name="p.fname"required>
+  <br>
+  Last name:<br>
+  <input type="text" name="p.lname"required>
+  <br>
+  Address:<br>
+  <input type="text" name="p.address" required>
+  <br>
+  City:<br>
+  <input type="text" name="p.city" required>
+  <br>
+  Province/State/Region:<br>
+  <input type="text" name="p.province" required>
+  <br>
+  Country:<br>
+  <input type="text" name="p.country" required>
+  <br>
+  E-Mail:<br>
+  <input type="text" name="p.email" required>
+  <br>
+  Confirm E-mail:<br>
+  <input type="text" name="p.confirm.email" equals="p.email" required>
+  <br>  
+  Phone Number:<br>
+  <input type="text" name="p.phone.number">
+  <br>
+  <h3>Billing Information</h3> 
+  First Name:<br>
+  <input type="text" name="b.fname" required>
+  <br>  
+  Last Name:<br>
+  <input type="text" name="b.lname" required>
+  <br>
+  Address:<br>
+  <input type="text" name="b.address" required>
+  <br>  
+  City:<br>
+  <input type="text" name="b.city" required>
+  <br>  
+  Province/State/Region:<br>
+  <input type="text" name="b.province" required>
+  <br>  
+  Country:<br>
+  <input type="text" name="b.country" required>
+  <br>  
+  E-Mail:<br>
+  <input type="text" name="b.email" required>
+  <br>  
+  Confirm E-Mail:<br>
+  <input type="text" name="b.confirm.email" required>
+  <br>  
+  Phone Number:<br>
+  <input type="text" name="b.phone.number">
+  <br><br>
+  <input type="submit" value="Checkout"> 
+</form> 
+
+
+<!--If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".-->
+
+</body>
+</html>
