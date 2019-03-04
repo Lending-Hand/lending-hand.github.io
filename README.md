@@ -63,4 +63,4 @@ Based on the [Marketing Agency one page template](https://github.com/website-tem
 ```
 
 ## License
-[Apache](https://github.com/Lending-Hand/lending-hand.github.io/blob/master/LICENSE.md)
+[Apache-2.0](https://github.com/Lending-Hand/lending-hand.github.io/blob/master/LICENSE.md)
