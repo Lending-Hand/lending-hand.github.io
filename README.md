@@ -168,4 +168,4 @@ Gulp: `gulp server`
 This project uses BrowserSync as static server with enabled and configured live reload option.
 
 ## License
-[MIT](https://github.com/website-templates/marketing-agency_one-page-template/blob/master/LICENSE.md)
+[MIT](https://github.com/Lending-Hand/lending-hand.github.io/blob/master/LICENSE.md)
