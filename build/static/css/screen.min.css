@@ -43,9 +43,7 @@ html,body{
     font-family:"Open Sans",Tahoma,Verdana,Arial,sans-serif;
     line-height:1.2
 }
-body{
-    background:#fff url(../images/bg-pattern.jpg)
-}
+
 .container{
     position:relative;
     max-width:1200px;
