@@ -28,8 +28,25 @@ document.getElementById('content').innerHTML = " \
 	} \
 </style> \
 <input type=\"text\" id=\"myInput\" onkeyup=\"myFunction()\" placeholder=\"Search for inputs...\"> \
-<ul id=\"myUL\"> \
-<li><a onclick=\"askAction()\">action</a></li> \
-<li><a onclick=\"askContent()\">content</a></li> \
+<ul id=\"items\"> \
+	<li><a>Item 1</a></li> \
+	<li><a>Item 2</a></li> \
 </ul> \
-";	
+";
+
+function refineSearch() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('searchBar');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
