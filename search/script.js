@@ -1,30 +1,23 @@
 var parsedUrl = new URL(window.location.href);
 document.getElementById('content').innerHTML = " \
 <style> \
-	#myInput { \
-		width: 100%; \
-		font-size: 16px; \
-		padding: 12px 20px 12px 40px; \
-		border: 1px solid #ddd; \
-		margin-bottom: 12px; \
-	} \
 	#items { \
 		list-style-type: none; \
 		padding: 0; \
 		margin: 0; \
 	} \
 	#items li a { \
-		border: 1px solid #ddd; \
+		border: 1px solid #328de3; \
 		margin-top: -1px; \
-		background-color: \#444444; \
+		background-color: #ffffff; \
 		padding: 12px; \
 		text-decoration: none; \
 		font-size: 18px; \
-		color: #ffffff; \
+		color: #000000; \
 		display: block; \
 	} \
 	#items li a:hover { \
-		background-color: \#666666; \
+		background-color: #328de3; \
 	} \
 </style> \
 <ul id=\"items\"> \
