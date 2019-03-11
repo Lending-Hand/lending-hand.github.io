@@ -13,8 +13,10 @@ Based on the [Marketing Agency one page template](https://github.com/website-tem
 ./
 ├── index.html                                 * initial home page
 ├── search/                                    * sources and pages for searching
-|   └── index.html                             * initial search page
-|
+|   ├── index.html                             * initial search page
+|   ├── products.html                          * the compilation of all our products
+|   └── script.js                              * scripty scripty
+|   
 ├── README.md
 |
 ├── dev/                                       * site sources
