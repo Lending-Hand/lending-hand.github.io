@@ -8,12 +8,12 @@ document.getElementById('content').innerHTML = " \
 		border: 1px solid #ddd; \
 		margin-bottom: 12px; \
 	} \
-	#myUL { \
+	#items { \
 		list-style-type: none; \
 		padding: 0; \
 		margin: 0; \
 	} \
-	#myUL li a { \
+	#items li a { \
 		border: 1px solid #ddd; \
 		margin-top: -1px; \
 		background-color: \#444444; \
@@ -23,11 +23,10 @@ document.getElementById('content').innerHTML = " \
 		color: #ffffff; \
 		display: block; \
 	} \
-	#myUL li a:hover:not(.header) { \
+	#items li a:hover { \
 		background-color: \#666666; \
 	} \
 </style> \
-<input type=\"text\" id=\"myInput\" onkeyup=\"myFunction()\" placeholder=\"Search for inputs...\"> \
 <ul id=\"items\"> \
 	<li><a>Item 1</a></li> \
 	<li><a>Item 2</a></li> \
@@ -38,7 +37,7 @@ function refineSearch() {
     var input, filter, ul, li, a, i;
     input = document.getElementById('searchBar');
     filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
+    ul = document.getElementById("items");
     li = ul.getElementsByTagName('li');
 
     for (i = 0; i < li.length; i++) {
