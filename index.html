@@ -168,25 +168,25 @@
                     
                     
 						<li class="services__item">                                         			<h4>Hat</h4>
-                            <p><img src="/build/static/images/PlaceholderImage.png" alt="HTML5 Icon" width="180" height="180"></p>
+                            				<p><img src="/build/static/images/PlaceholderImage.png" alt="HTML5 Icon" width="180" height="180"></p>
 							<p>This is a hat</p>
-                            <p style="color:red">Price: £14.99</p>
+                            				<p style="color:red">Price: £14.99</p>
 						</li>
                         
                         
 						<li class="services__item">
 							<h4>Trousers</h4>
-                            <p><img src="/build/static/images/PlaceholderImage.png" alt="HTML5 Icon" width="180" height="180"></p>
+                            				<p><img src="/build/static/images/PlaceholderImage.png" alt="HTML5 Icon" width="180" height="180"></p>
 							<p>This is a pair of trousers</p>
-                            <p style="color:red">Price: £24.99</p>
+                            				<p style="color:red">Price: £24.99</p>
 						</li>
                         
                         
 						<li class="services__item">
 							<h4>Shoe laces</h4>
-                            <p><img src="/build/static/images/PlaceholderImage.png" alt="HTML5 Icon" width="180" height="180"></p>
+                            				<p><img src="/build/static/images/PlaceholderImage.png" alt="HTML5 Icon" width="180" height="180"></p>
 							<p>These are shoelaces</p>
-                            <p style="color:red">Price: £9.99</p>
+                            				<p style="color:red">Price: £9.99</p>
 						</li>
                         
                         
@@ -194,25 +194,25 @@
 					<ul class="services services_pm">
 						<li class="services__item">
 						<h4>Hoodie</h4>
-                            <p><img src="/build/static/images/PlaceholderImage.png" alt="HTML5 Icon" width="180" height="180"></p>
+                            				<p><img src="/build/static/images/PlaceholderImage.png" alt="HTML5 Icon" width="180" height="180"></p>
 							<p>This is a Hoodie</p>
-                            <p style="color:red">Price: £59.99</p>
+                            				<p style="color:red">Price: £59.99</p>
 						</li>
                         
                         
 						<li class="services__item">
 							<h4>Armband</h4>
-                            <p><img src="/build/static/images/PlaceholderImage.png" alt="HTML5 Icon" width="180" height="180"></p>
+                            				<p><img src="/build/static/images/PlaceholderImage.png" alt="HTML5 Icon" width="180" height="180"></p>
 							<p>This is an armband</p>
-                            <p style="color:red">Price: £2.99</p>
+                            				<p style="color:red">Price: £2.99</p>
 						</li>
                         
                         
 						<li class="services__item">
 					<h4>Coat</h4>
-                            <p><img src="/build/static/images/PlaceholderImage.png" alt="HTML5 Icon" width="180" height="180"></p>
+                            				<p><img src="/build/static/images/PlaceholderImage.png" alt="HTML5 Icon" width="180" height="180"></p>
 							<p>This is a coat</p>
-                            <p style="color:red">Price: £99.99</p>
+                            				<p style="color:red">Price: £99.99</p>
 						</li>
                         
                         
@@ -322,16 +322,21 @@
 			var i;
 			var slides = document.getElementsByClassName("mySlides");
 			var dots = document.getElementsByClassName("dot");
+			
 			for (i = 0; i < slides.length; i++) {
 				slides[i].style.display = "none";
 			}
+			
 			slideIndex++;
+			
 			if (slideIndex > slides.length) {
 				slideIndex = 1
 			}
+			
 			for (i = 0; i < dots.length; i++) {
 				dots[i].className = dots[i].className.replace(" active", "");
 			}
+			
 			slides[slideIndex - 1].style.display = "block";
 			dots[slideIndex - 1].className += " active";
 			setTimeout(showSlides, 8000); // Change image every 8 seconds
